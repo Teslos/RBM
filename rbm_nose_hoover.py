@@ -251,7 +251,7 @@ class RBM_NoseHoover(nn.Module):
 def train_rbm(
     model: RBM_NoseHoover,
     dataloader: DataLoader,
-    n_epochs: int = 10,
+    n_epochs: int = 100,
     lr: float = 0.01,
     k: int = 1,
     device: str = "cpu",
@@ -359,7 +359,7 @@ if __name__ == "__main__":
     errors = train_rbm(
         model,
         loader,
-        n_epochs=10,
+        n_epochs=100,
         lr=0.01,
         k=1,
         device=device,
